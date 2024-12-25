@@ -3,7 +3,7 @@ view: product_embeddings_model {
     datagroup_trigger: ecomm_monthly
     sql_create:
       CREATE OR REPLACE MODEL ${SQL_TABLE_NAME}
-      REMOTE WITH CONNECTION `since-dev.US.vertex-ai-connection`
+      REMOTE WITH CONNECTION `@{BQML_REMOTE_CONNECTION_ID}`
       OPTIONS (ENDPOINT = 'textembedding-gecko@003');
     ;;
   }
