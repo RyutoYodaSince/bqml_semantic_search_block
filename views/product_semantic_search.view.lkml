@@ -4,7 +4,7 @@ view: product_embeddings_model {
     sql_create:
       CREATE OR REPLACE MODEL ${SQL_TABLE_NAME}
       REMOTE WITH CONNECTION `since-dev.asia-northeast1.vertex-ai-connection`
-      OPTIONS (ENDPOINT = 'projects/since-dev/locations/asia-northeast1/publishers/google/models/gemini-pro');
+      OPTIONS (ENDPOINT = 'textembedding-gecko@002');
     ;;
   }
 }
